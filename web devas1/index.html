@@ -1,0 +1,107 @@
+
+<head>
+     
+    <title>Portfolio - Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightgreen;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: purple;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .navbar {
+            margin-bottom: 30px;
+            border-bottom: 2px solid purple;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: lavender;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            border: 3px solid purple;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+        h3 {
+            margin-top: 40px;
+            color: green;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="cv.html">CV</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1>Welcome to My Portfolio</h1>
+        <figure>
+            <img src="my pic.jpg" alt="My Picture" class="rounded-circle img-fluid" width="200" height="200">
+            <figcaption>Hi, I'm Eman Anwar</figcaption>
+        </figure>
+        <p class="mt-4">I was born in Lahore, Pakistan, in the late 90s. I am a front and back end developer as well as a passionate software developer with interests in web development, data science, and machine learning.</p>
+        <p>I love creating innovative solutions that make a difference. Feel free to explore my projects and reach out!</p>
+        <h3>Hobbies</h3>
+        <p>Swimming is a refreshing escape for me. It keeps me fit and provides a peaceful way to relax and clear my mind.</p>
+        <p>Painting is my creative outlet, and I enjoy expressing my thoughts and emotions through colors and strokes on canvas.</p>
+        <p>I love exploring different cuisines, and trying new dishes and experimenting in the kitchen brings me joy.</p>
+        <p>Traveling allows me to discover new cultures, meet interesting people, and create lasting memories.</p>
+    </div>
+</body>
+</html>

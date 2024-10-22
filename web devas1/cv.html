@@ -1,0 +1,91 @@
+
+<head>
+    
+    <title>Portfolio - CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #c8e6c9;
+            color: black;
+            font-family: Calibri, sans-serif;
+        }
+        h2 {
+            color: black;
+            margin-top: 20px;
+        }
+        .cv-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .embed-responsive {
+            max-height: 80vh;
+            overflow: hidden;
+        }
+        .download-link {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .download-link:hover {
+            background-color: #6a0dad;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                        Pages
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="projects.html">Projects</a>
+                        <a class="dropdown-item" href="cv.html">CV</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container cv-container">
+        <h2>Curriculum Vitae</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <embed src="cv upload.pdf" type="application/pdf" class="embed-responsive-item">
+        </div>
+        <a href="cv upload.pdf" class="download-link" download>Download CV</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<head>
+    <title>Portfolio - Projects</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #c8e6c9;
+            color: black;
+            font-family: Calibri, sans-serif;
+        }
+        h2 {
+            color: black;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .project-card {
+            width: 100%;
+            margin: 0 10px 40px;
+            border: 2px solid purple;
+            border-radius: 5px;
+            transition: none;
+        }
+        .card {
+            background-color: lavender;
+            border-radius: 5px;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .project-card:hover {
+            box-shadow: none;
+            background-color: lavender;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            z-index: 1000;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                        Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="projects.html">Projects</a>
+                        <a class="dropdown-item" href="cv.html">CV</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 1: Sentiment Analysis</h3>
+                            <p class="card-text">Developed a sentiment analysis system using Support Vector Machine and Naive Bayes algorithms to classify text data. (2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 2: Go Green</h3>
+                            <p class="card-text">Created an app for eco-conscious citizens to promote sustainable practices and community involvement. (2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 3: E-commerce Store</h3>
+                            <p class="card-text">Designed a fully responsive GUI-based e-commerce store for buying all types of fries using Python development. (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 4: Library Management System</h3>
+                            <p class="card-text">Implemented a library management system using MySQL to manage book information and user transactions. (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 5: Fitness Tracker</h3>
+                            <p class="card-text">Developed an app to log daily exercise, calories consumed, and health metrics, with features to set goals and track progress. (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 6: Movie Rental System</h3>
+                            <p class="card-text">Created a system to manage movie rentals, allowing users to rent, return, and search for movies with tracking features. (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
